@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from '../assets/img/pet-shop-logo.png'
 import './NavBar.css'
 
@@ -22,25 +23,21 @@ export default function NavBar() {
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              <Link class="nav-link active" to="/">
                 Home
-              </a>
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/banho-e-tosa">
+                Banho e Tosa
+              </Link>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                Features
+                Adestramento
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Pricing
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">
-                Disabled
-              </a>
-            </li>
+           
           </ul>
         </div>
       </div>
